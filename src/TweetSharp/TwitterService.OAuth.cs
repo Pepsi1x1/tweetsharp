@@ -436,7 +436,7 @@ namespace TweetSharp
                                }
                );
         }
-
+#endif
         public virtual RestRequest PrepareEchoRequest(string realm = "http://api.twitter.com")
         {
             var args = new FunctionArguments
@@ -467,6 +467,6 @@ namespace TweetSharp
             echo.AddHeader("X-Verify-Credentials-Authorization", auth);
             return echo;
         }
-#endif
+
     }
 }
